@@ -78,16 +78,20 @@ h1 {
 }
 
 button {
-    color: white;
-    background-color: #3882F6;
     font-weight: bold;
-    border: solid #3882F6 2px;
     border-radius: 5px;
     padding: 10px;
     width: 100px;
+    cursor: pointer;
 }
 
-button:hover {
+#header-btn {
+    color: white;
+    background-color: #3882F6;
+    border: solid #3882F6 2px;
+}
+
+#header-btn:hover {
     background-color: transparent;
     border: solid white 2px;
 }
@@ -181,11 +185,13 @@ cite {
     gap: 2vw;
 }
 
-.cta button {
+#cta-btn {
+    background-color: transparent;
     border: solid white 2px;
+    color: white;
 }
 
-.cta button:hover {
+#cta-btn:hover {
     color: #3882F6;
     background-color: white;
 }
@@ -241,7 +247,7 @@ footer {
         font-size: 0.7em;
     }
     header {
-        height: 73vh;
+        height: 40vh;
     }
     .header-content {
         margin: 0px;
@@ -256,6 +262,9 @@ footer {
         width: 95%;
         align-self: center;
         text-align: center;
+    }
+    .fake-header-img {
+        display: none;
     }
     figcaption {
         font-size: 0.75rem;
