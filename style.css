@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 
-header , footer {
+header, footer {
     background-color: #1F2937;
     color: #E5E7EB;
 }
@@ -98,7 +98,10 @@ button {
 
 .info {
     padding: 20px 10vw 30px 10vw;
-    height: 50vh;
+    height: 53vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .images {
@@ -113,12 +116,6 @@ figure {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 5px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h2 {
@@ -221,7 +218,7 @@ footer {
     }
     .fake-header-img {
         width: 95%;
-        height: 30vh;
+        height: 20vw;
     }
     .info {
         height: 125vh;
