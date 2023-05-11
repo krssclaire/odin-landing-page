@@ -246,8 +246,8 @@ footer {
     nav {
         font-size: 0.7em;
     }
-    header {
-        height: 40vh;
+    header, main {
+        height: fit-content;
     }
     .header-content {
         margin: 0px;
@@ -267,7 +267,7 @@ footer {
         display: none;
     }
     figcaption {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
     }
     .quote {
         padding: 2.5vh 5vw;
