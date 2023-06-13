@@ -64,7 +64,7 @@ button:hover {
 header {
     display: flex;
     flex-direction: column;
-    padding: 40px 15vw 20px 15vw;
+    padding: 40px 10vw 20px 10vw;
 }
 
 nav {
@@ -117,9 +117,10 @@ a:hover {
 }
 
 .header-content img {
-    height: 400px;
+    height: 20vw;
     width: auto;
     border-radius: 5px;
+    align-self: center;
 }
 
 .text-content {
@@ -152,6 +153,7 @@ h1 {
 .info {
     color: var(--font-color);
     height: 60vh;
+    padding: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +164,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 20px 15vw;
+    padding: 20px 10vw;
 }
 
 h2 {
@@ -212,7 +214,7 @@ figcaption {
     background-color: var(--main-bg);
     color: var(--font-color);
     height: 50vh;
-    padding: 50px 15vw;
+    padding: 50px 10vw;
     box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
@@ -287,77 +289,77 @@ footer {
     height: 100px;
 }
 
-/* Tablet */
-@media screen and (max-width: 985px) {
+/* Tablet & Small Laptop */
+@media screen and (max-width: 1260px) {
     header {
-        height: 83vh;
+        height: fit-content;
     }
-    .main-content {
-        flex-direction: column;
+    .header-content {
+        justify-content: center;
+        align-items: center;
     }
-    .fake-main-img {
-        width: 95%;
-        height: 15vw;
+    .header-content img {
+        display: none;
     }
-    .info {
-        height: 125vh;
+    .text-content {
+        width: 85vw;
+        max-width: 90vw;
+    }
+    .info, .quote, .last {
+        height: fit-content;
+        padding: 2em 0;
     }
     .images {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-    figure img {
-        height: 15vw;
-        width: 15vw;
+    figure {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+    figure:hover {
+        transform: scale(1, 1);
     }
     .quote {
         padding: 5vh 10vw;
     }
-    .quote p {
-        font-size: 2rem;
+    .cta {
+        height: fit-content;
+        padding: 2em 1.5em;
+        flex-direction: column;
     }
 }
 
 /* Mobile */
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 0px;
+        width: 100%;
+    }
     nav {
-        font-size: 0.7em;
-    }
-    header, main {
-        height: fit-content;
-    }
-    .main-content {
-        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        gap: 20px;
     }
     h1 {
         font-size: 2rem;
     }
-    .info {
-        height: 110vh;
+    figure img {
+        width: 100px;
+        height: 100px;
+    }
+    .quote {
+        font-size: 0.8em;
     }
     button {
-        width: 95%;
+        width: 100%;
         align-self: center;
         text-align: center;
-    }
-    .fake-main-img {
-        display: none;
-    }
-    figcaption {
-        font-size: 0.6rem;
     }
     .quote {
         padding: 2.5vh 5vw;
     }
-    .quote p {
-        font-size: 1.2rem;
-    }
-    .last {
-        height: 30vh;
-    }
-    .cta {
-        flex-direction: column;
-    }
-    footer p {
-        font-size: 0.75rem;
+    .cta, footer {
+        font-size: 0.9em;
     }
 }

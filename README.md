@@ -1,11 +1,10 @@
-<!-- INTRO-->
 # Landing Page
 
-A clone of the landing page of The Odin Project Flexbox project.
-Live demo: [Landing Page](https://krssclaire.github.io/odin-landing-page/)
+Eureka is a fictitious fashion company that sells sustainable bridal wear. Their items are made with high-quality materials and are sold online only. They want to convey a sense of eagerness, while at the same time being kind.
+<br>
+Live demo: [Eureka Landing Page](https://krssclaire.github.io/odin-landing-page/)
 
 
-<!-- ABOUT THE PROJECT -->
 ## Technologies used
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
@@ -31,16 +30,16 @@ Live demo: [Landing Page](https://krssclaire.github.io/odin-landing-page/)
 
 * Practice Flexbox better
 * Use box-shadow and drop-shadow effects
+* Writing copywriting content
 
 
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * Inspired by [The Odin Project](https://www.theodinproject.com/) second project of the Foundations Course
 * Design brief by [Goodbrief](https://goodbrief.io/)
 * Images credits:
-    * Bridal dress bt [PhotoMIX Company](https://www.pexels.com/photo/white-floral-sleeveless-wedding-gown-291759/)
+    * Bridal dress by [PhotoMIX Company](https://www.pexels.com/photo/white-floral-sleeveless-wedding-gown-291759/)
     * Flowers Bouquet by [Terje Sollie](https://www.pexels.com/photo/close-up-of-pink-rose-bouquet-313697/)
     * Bridal accessories by [Kristina Polianskaia](https://www.pexels.com/photo/crop-bride-with-makeup-tools-before-wedding-ceremony-4241704/)
     * Accessories by [jasmin chew](https://www.pexels.com/photo/crop-stylish-woman-in-wedding-dress-5411883/)
-    * Rose favicon by [Freepik](https://www.flaticon.com/free-icons/flower" title="flower icons) - Flaticon and edited with Figma
+    * Rose favicon by [Freepik](https://www.flaticon.com/free-icons/flower) - Flaticon and edited with Figma
