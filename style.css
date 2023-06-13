@@ -28,10 +28,6 @@ nav {
     justify-content: space-between;
 }
 
-h3, h1 {
-    color: #F9FAF8;
-}
-
 ul {
     display: flex;
     gap: 20px;
@@ -208,7 +204,7 @@ footer {
     height: 100px;
 }
 
-/* Tablet version */
+/* Tablet */
 @media screen and (max-width: 985px) {
     header {
         height: 83vh;
@@ -238,7 +234,7 @@ footer {
     }
 }
 
-/* Mobile version */
+/* Mobile */
 @media screen and (max-width: 540px) {
     nav {
         font-size: 0.7em;
