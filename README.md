@@ -20,10 +20,10 @@ Live demo: [Eureka Landing Page](https://krssclaire.github.io/odin-landing-page/
 ![VSCode](https://img.shields.io/badge/VSCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 
-## Outcome
+## Features
 
-* Use of CSS3 flexbox to manage layouts
-* Git and GitHub used for project management
+* Responsive on main devices, thanks to responsive layouts and breakpoints
+* Hover effects for more interactivity
 
 
 ## What I learned
