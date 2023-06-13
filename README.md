@@ -15,6 +15,7 @@ Live demo: [Landing Page](https://krssclaire.github.io/odin-landing-page/)
 ## Tools used
 
 ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VSCode-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -29,10 +30,17 @@ Live demo: [Landing Page](https://krssclaire.github.io/odin-landing-page/)
 ## What I learned
 
 * Practice Flexbox better
+* Use box-shadow and drop-shadow effects
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * Inspired by [The Odin Project](https://www.theodinproject.com/) second project of the Foundations Course
-* Bride image by [Oleksandr Pidvalnyi](https://www.pexels.com/it-it/foto/tessile-bianca-di-diffusione-della-donna-341372/)
+* Design brief by [Goodbrief](https://goodbrief.io/)
+* Images credits:
+    * Bridal dress bt [PhotoMIX Company](https://www.pexels.com/photo/white-floral-sleeveless-wedding-gown-291759/)
+    * Flowers Bouquet by [Terje Sollie](https://www.pexels.com/photo/close-up-of-pink-rose-bouquet-313697/)
+    * Bridal accessories by [Kristina Polianskaia](https://www.pexels.com/photo/crop-bride-with-makeup-tools-before-wedding-ceremony-4241704/)
+    * Accessories by [jasmin chew](https://www.pexels.com/photo/crop-stylish-woman-in-wedding-dress-5411883/)
+    * Rose favicon by [Freepik](https://www.flaticon.com/free-icons/flower" title="flower icons) - Flaticon and edited with Figma

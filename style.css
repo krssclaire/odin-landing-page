@@ -1,7 +1,24 @@
 @import url('https://fonts.cdnfonts.com/css/hero-new');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
+:root {
+    --main-bg: rgb(10, 10, 10);
+    --lighter-bg: rgb(20, 20, 20);
+    --font-color: rgb(229, 231, 235); 
+    --logo: rgb(255, 150, 166);
+    --shadow: 0px 2px 5px black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: inherit;
+    background-color: var(--lighter-bg);
+    height: 100%;
+    width: 100vw;
     font-size: 18px;
     font-family: "Hero New", sans-serif;
     display: flex;
@@ -11,30 +28,76 @@ body {
     overflow-x: hidden;
 }
 
-header, footer {
-    background-color: #1F2937;
-    color: #E5E7EB;
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(164, 164, 164);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(120, 120, 120); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(100, 100, 100); 
 }
 
+header, footer {
+    background-color: var(--main-bg);
+    color: var(--font-color);
+    box-shadow: var(--shadow);
+}
+
+p {
+    text-align: justify;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* Header */
 header {
     display: flex;
     flex-direction: column;
-    padding: 10px 10vw 60px 10vw;
+    padding: 40px 15vw 20px 15vw;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 ul {
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 li {
     list-style-type: none;
+    align-self: center;
+}
+
+#logo {
+    color: var(--main-bg);
+    font-family: 'Hind', sans-serif;
+    font-size: 2em;
+    filter: drop-shadow(1px 1px 7px var(--logo));
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#logo:hover {
+    cursor: pointer;
+}
+
+#rose-logo {
+    height: 40px;
+    width: 40px;
 }
 
 a {
@@ -50,143 +113,162 @@ a:hover {
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
-    gap: 5vw;
+    gap: 20px;
 }
 
-.fake-header-img {
-    background-color: rgb(123, 126, 138);
-    color: white;
-    width: 600px;
-    font-size: 0.75em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-content img {
+    height: 400px;
+    width: auto;
+    border-radius: 5px;
 }
 
 .text-content {
-    max-width: 600px;
+    width: 40vw;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 h1 {
-    font-size: 48px;
-    font-weight: extra-bold;
-    margin-bottom: 0;
-}
-
-button {
+    font-size: 3em;
     font-weight: bold;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100px;
-    cursor: pointer;
+    margin: 0px;
 }
 
 #header-btn {
-    color: white;
-    background-color: #3882F6;
-    border: solid #3882F6 2px;
+    color: var(--main-bg);
+    background-color: var(--logo);
+    border: solid var(--logo) 2px;
 }
 
 #header-btn:hover {
     background-color: transparent;
-    border: solid white 2px;
+    color: var(--logo);
+    border: solid var(--logo) 2px;
 }
 
+/* Main - Our products*/
 .info {
-    padding: 20px 10vw 30px 10vw;
-    height: 53vh;
+    color: var(--font-color);
+    height: 60vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .images {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 3vh 10vw;
-}
-
-figure {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 5px;
+    padding: 20px 15vw;
 }
 
 h2 {
+    color: var(--font-color);
     text-align: center;
-    font-size: 36px;
-    font-weight: extra-bold;
-    color: #1F2937;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+figure {
+    padding: 20px;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+figure:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 figure img {
-    border: solid #3882F6 2px;
     border-radius: 5px;
-    height: 170px;
-    width: 170px;
+    height: 200px;
+    width: 200px;
     flex-shrink: 0;
     align-self: center;
 }
 
 figcaption {
-    text-align: center;
-    font-size: 15px;
+    text-align: justify;
+    line-height: 20px;
+    font-size: 0.8em;
+    max-width: 200px;
 }
 
+.mark {
+    color: var(--logo);
+    font-family: 'Hind', sans-serif;   
+    text-transform: uppercase;
+}
+
+/* Main - Testimonial */
 .quote {
-    background-color: #E5E7EB;
-    color: #1F2937;
-    margin: auto;
-    height: 45vh;
-    padding: 5vh 20vw;
+    background-color: var(--main-bg);
+    color: var(--font-color);
+    height: 50vh;
+    padding: 50px 15vw;
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.quote p {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 275;
-    text-align: left;
+blockquote {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
+blockquote p {
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+cite {
+    color: var(--logo);
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+/* Main - Call to action */
 .last {
     padding: 5vh 10vw;
-    height: 20vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-cite {
-    font-weight: 700;
-}
-
 .cta {
-    background-color: #3882F6;
-    color: white;
+    background-color: var(--logo);
+    color: var(--main-bg);
     border-radius: 5px;
     padding: 10px 30px;
+    height: 150px;
     width: 60vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 2vw;
+    gap: 20px;
 }
 
 #cta-btn {
     background-color: transparent;
-    border: solid white 2px;
-    color: white;
+    border: solid var(--main-bg) 2px;
+    color: var(--main-bg);
 }
 
 #cta-btn:hover {
-    color: #3882F6;
-    background-color: white;
+    color: var(--logo);
+    background-color: var(--main-bg);
 }
 
 h4 {
@@ -197,6 +279,7 @@ h4 {
     margin-top: 0;
 }
 
+/* Footer */
 footer {
     display: flex;
     justify-content: center;
@@ -209,12 +292,12 @@ footer {
     header {
         height: 83vh;
     }
-    .header-content {
+    .main-content {
         flex-direction: column;
     }
-    .fake-header-img {
+    .fake-main-img {
         width: 95%;
-        height: 20vw;
+        height: 15vw;
     }
     .info {
         height: 125vh;
@@ -223,8 +306,8 @@ footer {
         flex-direction: column;
     }
     figure img {
-        height: 20vw;
-        width: 20vw;
+        height: 15vw;
+        width: 15vw;
     }
     .quote {
         padding: 5vh 10vw;
@@ -242,7 +325,7 @@ footer {
     header, main {
         height: fit-content;
     }
-    .header-content {
+    .main-content {
         margin: 0px;
     }
     h1 {
@@ -256,7 +339,7 @@ footer {
         align-self: center;
         text-align: center;
     }
-    .fake-header-img {
+    .fake-main-img {
         display: none;
     }
     figcaption {
